@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS and custom styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f9ece1; /* Light beige background */
+            padding-top: 60px; /* Space for fixed navbar */
+        }
+
+        .navbar {
+            background-color: #ff9f5a; /* Warm orange navbar */
+        }
+
+        .card {
+            background-color: #ffcc80; /* Light orange card background */
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #ff9f5a; /* Darker orange card header */
+            color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #ff9f5a; /* Orange button */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff7c2e; /* Darker orange on hover */
+        }
+
+        .footer {
+            background-color: #ff9f5a; /* Orange footer */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+
+    <title>Adoption Center</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Adoption Center</a>
+    </nav>
+
+    <!-- Content Area -->
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2023 Adoption Center
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
